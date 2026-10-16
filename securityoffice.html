@@ -7,37 +7,40 @@
 </head>
 
 <body>
-  <nav><nav>
+  <nav>
     <a href="index.html">Home</a> |
-    <a href="/About the developer/">About the Developer</a> |
-  </nav></nav>
+    <a href="/About the developer/">About the Developer</a>
+  </nav>
+
   <header>
     <h1>Security Office Room</h1>
   </header>
 
   <main>
     <img src="securityoffice.avif" width="300" height="400">
-      <h4>        The security guard sits beside the monitors, watching the museum's hallways. A security log lies open on the desk, recording who entered different rooms. You can question the guard or check the log for clues about the blackout.
 
-</h2>
-      
-        
+    <p>
+      The security guard sits beside the monitors, watching the
+      museum's hallways. You can check the camera footage or
+      question the guard for clues about the blackout.
+    </p>
 
-      <h2>Choices</h2>
-      <button type="button">Check security camera</button>
-      <button type="button">Ask the security guard questions</button>
+    <h2>Choices</h2>
 
-      <h2>Inventory</h2>
-      <p>Collected items:</p>
-      <ul>
-        <li>None</li>
-      </ul>
+    <button onclick="addStatus('The camera shows the manager entering the art display room before the blackout.')">
+      Check security camera
+    </button>
 
-      <h2>Status / Clues Found</h2>
-      <ul>
-        <li>The painting is missing.</li>
-        <li>No clues found yet.</li>
-      </ul>
+    <button onclick="addStatus('The security guard says he does not know anything.')">
+      Ask the security guard questions
+    </button>
+
+    <h2>Inventory</h2>
+    <p>Inventory: <span id="inventory"></span></p>
+
+    <h2>Status / Clues Found</h2>
+    <p id="status"></p>
+
 
       <h2>Room Navigation</h2>
       <a href = "artrepairroom.html"><button>Go to Art Repair Room</button></a>
@@ -46,6 +49,8 @@
   <footer>
 <a href = "artdisplayroom.html"><button>Back to Art Display Room</button></a>
   </footer>
+   <script src="game.js"></script>
+
 </body>
 </html>
 

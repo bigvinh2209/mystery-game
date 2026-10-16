@@ -7,38 +7,40 @@
 </head>
 
 <body>
-  <nav><nav>
+  <nav>
     <a href="index.html">Home</a> |
-    <a href="/About the developer/">About the Developer</a> |
-  </nav></nav>
+    <a href="/About the developer/">About the Developer</a>
+  </nav>
+
   <header>
     <h1>Art Repair Room</h1>
   </header>
 
   <main>
     <img src="artrepairroom.avif" width="400" height="400">
-      <h4>        Paintbrushes and unfinished paintings are scattered around the room. On one table, you spot a UV flashlight with a note beside it. You take a closer look, hoping to find something that could help with the missing painting.
 
+    <p>
+      Paintbrushes and unfinished paintings are scattered around
+      the room. On one table, you spot a UV flashlight with a note
+      beside it. You take a closer look, hoping to find something
+      that could help with the missing painting.
+    </p>
 
-</h2>
-      
-        
+    <h2>Choices</h2>
 
-      <h2>Choices</h2>
-      <button type="button">Collect the UV flashlight</button>
-      <button type="button">Check the note</button>
+    <button onclick="addItem('UV Light')">
+      Collect the UV flashlight
+    </button>
 
-      <h2>Inventory</h2>
-      <p>Collected items:</p>
-      <ul>
-        <li>None</li>
-      </ul>
+    <button onclick="addStatus('The missing painting has a hidden signature visible under UV light.')">
+      Read the note
+    </button>
 
-      <h2>Status / Clues Found</h2>
-      <ul>
-        <li>The painting is missing.</li>
-        <li>No clues found yet.</li>
-      </ul>
+    <h2>Inventory</h2>
+    <p>Inventory: <span id="inventory"></span></p>
+
+    <h2>Status / Clues Found</h2>
+    <p id="status"></p>
 
       <h2>Room Navigation</h2>
       <a href = "manageroffice.html"><button>Go to Manager's Office</button></a>
@@ -47,6 +49,8 @@
   <footer>
 <a href = "securityoffice.html"><button>Back to Security Office</button></a>
   </footer>
+   <script src="game.js"></script>
+
 </body>
 </html>
 

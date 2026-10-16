@@ -7,39 +7,40 @@
 </head>
 
 <body>
-  <nav><nav>
+  <nav>
     <a href="index.html">Home</a> |
-    <a href="/About the developer/">About the Developer</a> |
-  </nav></nav>
+    <a href="/About the developer/">About the Developer</a>
+  </nav>
+
   <header>
     <h1>Manager's Office</h1>
   </header>
 
   <main>
     <img src="manageroffice.jpg" width="400" height="400">
-      <h4>       The manager isn’t in his office. His desk is covered in papers, but you notice a spare key and a signed shipping form near the edge. You stop to check them before moving on.
 
+    <p>
+      The manager isn't in his office. His desk is covered in papers,
+      but you notice a spare key and a signed shipping form near the
+      edge. You stop to check one before moving on.
+    </p>
 
+    <h2>Choices</h2>
 
-</h2>
-      
-        
+    <button onclick="addStatus('The spare key is for the painting display case.'); window.location.href='shippingroom.html'">
+      Examine the spare key
+    </button>
 
-      <h2>Choices</h2>
-      <button type="button">Examine the spare key</button>
-      <button type="button">Collect the signed form</button>
+    <button onclick="addItem('Signed Form'); window.location.href='shippingroom.html'">
+      Collect the signed form
+    </button>
 
-      <h2>Inventory</h2>
-      <p>Collected items:</p>
-      <ul>
-        <li>None</li>
-      </ul>
+    <h2>Inventory</h2>
+    <p>Inventory: <span id="inventory"></span></p>
 
-      <h2>Status / Clues Found</h2>
-      <ul>
-        <li>The painting is missing.</li>
-        <li>No clues found yet.</li>
-      </ul>
+    <h2>Status / Clues Found</h2>
+    <p id="status"></p>
+  </main>
 
       <h2>Room Navigation</h2>
       <a href = "shippingroom.html"><button>Go to Shipping Room</button></a>
@@ -48,6 +49,8 @@
   <footer>
 <a href = "artrepairroom.html"><button>Back to Art Repair Room</button></a>
   </footer>
+   <script src="game.js"></script>
+
 </body>
 </html>
 
